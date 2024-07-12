@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>E-SHOP</title>
+  </head>
+  <body>
+    <header>
+      <nav class="header_nav container">
+        <div class="header_nav_left">
+          <a href="#" class="header_nav_left_link">
+            <img src="./img/logo_icon.svg" alt="логотип" />
+          </a>
+          <a href="#" class="header_nav_left_link">
+            <svg
+              width="26.002"
+              height="26.792"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M18.06 17.41c1.61-1.76 2.57-4.02 2.71-6.4.14-2.39-.54-4.74-1.94-6.68-1.39-1.94-3.4-3.34-5.71-3.97a10.382 10.382 0 0 0-11.98 5.3 10.404 10.404 0 0 0-.92 6.89c.5 2.33 1.78 4.43 3.64 5.93s4.17 2.31 6.56 2.3c2.25.01 4.44-.73 6.24-2.08l7.75 7.8c.08.09.18.16.3.21.11.05.23.08.36.08a.937.937 0 0 0 .66-.29.98.98 0 0 0 .27-.67c0-.25-.1-.49-.27-.67l-7.67-7.75ZM1.88 10.28c.02-1.68.53-3.32 1.47-4.72A8.561 8.561 0 0 1 7.2 2.45c1.56-.64 3.27-.8 4.92-.46 1.65.33 3.17 1.15 4.36 2.35a8.534 8.534 0 0 1 2.31 4.37c.33 1.65.16 3.37-.49 4.92a8.463 8.463 0 0 1-3.15 3.82c-1.4.94-3.05 1.44-4.73 1.44a8.641 8.641 0 0 1-6.05-2.54 8.597 8.597 0 0 1-2.49-6.07Z"
+                fill="#E8E8E8"
+              />
+            </svg>
+          </a>
+        </div>
+        <div class="header_nav_right">
+          <button class="header_nav_right_button header_nav__btn_menu">
+            <svg
+              width="32"
+              height="23"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 23v-2.69h32V23H0Zm0-10.24v-2.7h32v2.7H0ZM0 2.68V0h32v2.68H0Z"
+                fill="#E8E8E8"
+              />
+            </svg>
+          </button>
+          <button class="header_nav_right_button header_nav__btn_man">
+            <svg
+              width="29"
+              height="29"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M14.5 19.93c4.5 0 8.15-4.47 8.15-9.97C22.65 4.47 19 0 14.5 0a7.43 7.43 0 0 0-5.84 3 11.106 11.106 0 0 0-2.32 6.97c0 5.49 3.66 9.96 8.16 9.96Zm0-18.12c3.5 0 6.34 3.66 6.34 8.15 0 4.5-2.85 8.16-6.34 8.16-3.5 0-6.35-3.66-6.35-8.16 0-4.49 2.85-8.15 6.35-8.15Zm6.34 16.31c-.24 0-.47.1-.64.27a.91.91 0 0 0-.27.64c0 .24.1.47.27.64.17.17.4.26.64.26 1.68 0 3.29.67 4.48 1.86a6.36 6.36 0 0 1 1.86 4.49.9.9 0 0 1-.26.64.9.9 0 0 1-.64.26H2.71a.9.9 0 0 1-.64-.26.944.944 0 0 1-.26-.64c0-1.68.67-3.3 1.86-4.49a6.378 6.378 0 0 1 4.48-1.86.9.9 0 0 0 .64-.26c.17-.17.27-.4.27-.64s-.1-.47-.27-.64a.91.91 0 0 0-.64-.27c-2.16 0-4.23.86-5.76 2.39A8.15 8.15 0 0 0 0 26.28c0 .72.28 1.41.79 1.92s1.2.79 1.92.8h23.57a2.76 2.76 0 0 0 1.92-.8c.51-.51.79-1.2.8-1.92a8.202 8.202 0 0 0-2.4-5.77 8.145 8.145 0 0 0-5.76-2.39Z"
+                fill="#E8E8E8"
+              />
+            </svg>
+          </button>
+          <button class="header_nav_right_button header_nav__btn_basket">
+            <svg
+              width="31.996"
+              height="29"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M26.2 29c-.65-.03-1.26-.31-1.71-.78-.44-.47-.68-1.1-.67-1.75.01-.65.28-1.27.74-1.72a2.52 2.52 0 0 1 1.74-.71c.64 0 1.27.26 1.73.71.46.45.73 1.07.74 1.72.02.65-.23 1.28-.67 1.75-.44.47-1.06.75-1.7.78h-.2ZM6.75 26.31c0-.53.16-1.04.45-1.48.29-.44.71-.79 1.2-.99.49-.2 1.03-.26 1.55-.15.52.1 1 .36 1.37.73.38.37.63.85.74 1.37.1.52.05 1.06-.16 1.55-.2.49-.54.91-.98 1.2a2.647 2.647 0 0 1-2.52.25 2.654 2.654 0 0 1-1.45-1.45c-.13-.32-.2-.67-.2-1.03Zm3.8-5.63a1.197 1.197 0 0 1-1.15-.87L4.57 2.36H1.18c-.32 0-.62-.13-.84-.35C.12 1.79 0 1.49 0 1.18 0 .86.12.56.34.34.56.12.86 0 1.18 0h4.28c.26-.01.51.08.72.24.2.15.35.37.42.62l4.83 17.46h13.18L29 8.27H14.4c-.16 0-.32-.02-.47-.08-.14-.06-.28-.14-.39-.25a1.142 1.142 0 0 1-.36-.85c0-.16.03-.32.09-.46.06-.15.15-.28.27-.39.11-.11.25-.2.39-.26.15-.05.31-.08.47-.07h16.41c.19-.01.39.04.56.14.17.09.32.22.42.39.11.16.18.35.2.55.01.19-.02.39-.09.57l-5.41 12.41c-.09.21-.24.39-.44.52-.19.12-.41.19-.64.19H10.55Z"
+                fill="#E8E8E8"
+              />
+            </svg>
+            <div class="header_nav_btn_basket__after">5</div>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="first_section">
+        <div class="first_section_left">
+          <img
+            src="./img/main_man.png"
+            alt="стильный человек, купивший одежду у нас"
+          />
+        </div>
+        <div class="first_section_right">
+          <div class="first_section_right_text">
+            <h2>THE BRAND</h2>
+            <p>OF&nbsp;LUXERIOUS <span class="text_color">FASHION</span></p>
+          </div>
+        </div>
+        <div class="popup hide">
+          <h2 class="popup__title">MENU</h2>
+          <ul class="popup__level1">
+            <li class="popup_level1__item">
+              MAN
+              <ul class="popup__level2">
+                <li class="popup_level2__item">
+                  <a href="#" class="popup_level2__link">Accessories</a>
+                </li>
+                <li class="popup_level2__item">
+                  <a href="#" class="popup_level2__link">Bags</a>
+                </li>
+                <li class="popup_level2__item">
+                  <a href="#" class="popup_level2__link">Denim</a>
+                </li>
+                <li class="popup_level2__item">
+                  <a href="#" class="popup_level2__link">T-Shirts</a>
+                </li>
+              </ul>
+            </li>
+            <li class="popup_level1__item">
+              WOMAN
+              <ul class="popup__level2">
+                <li class="popup_level2__item">
+                  <a href="#" class="popup_level2__link">Accessories</a>
+                </li>
+                <li class="popup_level2__item">
+                  <a href="#" class="popup_level2__link"
+                    >Jackets &amp;&nbsp;Coats</a
+                  >
+                </li>
+                <li class="popup_level2__item">
+                  <a href="#" class="popup_level2__link">Polos</a>
+                </li>
+                <li class="popup_level2__item">
+                  <a href="#" class="popup_level2__link">T-Shirts</a>
+                </li>
+                <li class="popup_level2__item">
+                  <a href="#" class="popup_level2__link">Shirts</a>
+                </li>
+              </ul>
+            </li>
+            <li class="popup_level1__item">
+              KIDS
+              <ul class="popup__level2">
+                <li class="popup_level2__item">
+                  <a href="#" class="popup_level2__link">Accessories</a>
+                </li>
+                <li class="popup_level2__item">
+                  <a href="#" class="popup_level2__link"
+                    >Jackets &amp;&nbsp;Coats</a
+                  >
+                </li>
+                <li class="popup_level2__item">
+                  <a href="#" class="popup_level2__link">Polos</a>
+                </li>
+                <li class="popup_level2__item">
+                  <a href="#" class="popup_level2__link">T-Shirts</a>
+                </li>
+                <li class="popup_level2__item">
+                  <a href="#" class="popup_level2__link">Shirts</a>
+                </li>
+                <li class="popup_level2__item">
+                  <a href="#" class="popup_level2__link">Bags</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="second_section container">
+        <div class="second_section_cards_top">
+          <div class="second_section_card_top second_section_card1_top">
+            <div class="second_section_card_top_shutter">
+              <div
+                class="second_section_card_top_text items_center flex_column"
+              >
+                <h2 class="second_section_card_text_h2">30% OFF</h2>
+                <p class="text_color second_section_card_text_p">FOR WOMEN</p>
+              </div>
+            </div>
+          </div>
+          <div class="second_section_card_top second_section_card2_top">
+            <div class="second_section_card_top_shutter">
+              <div
+                class="second_section_card_top_text items_center flex_column"
+              >
+                <h2 class="second_section_card_text_h2">HOT DEAL</h2>
+                <p class="text_color second_section_card_text_p">FOR MEN</p>
+              </div>
+            </div>
+          </div>
+          <div class="second_section_card_top second_section_card3_top">
+            <div class="second_section_card_top_shutter">
+              <div
+                class="second_section_card_top_text items_center flex_column"
+              >
+                <h2 class="second_section_card_text_h2">NEW ARRIVALS</h2>
+                <p class="text_color second_section_card_text_p">FOR KIDS</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="second_section_cards_bottom items_center">
+          <div class="second_section_card_bottom">
+            <div class="second_section_card_bottom_shutter">
+              <div
+                class="second_section_card_bottom_text items_center flex_column"
+              >
+                <h2 class="second_section_card_text_h2">
+                  LUXIROUS &amp;&nbsp;TRENDY
+                </h2>
+                <p class="text_color second_section_card_text_p">ACCESORIES</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="third_section items_center flex_column container">
+        <h2 class="third_section_h2">Fetured Items</h2>
+        <h3 class="third_section_h3">
+          Shop for items based on&nbsp;what we&nbsp;featured in&nbsp;this week
+        </h3>
+        <div class="cards_grid">
+          <div class="card_grid">
+            <div class="card_img">
+              <img src="./img/grid_card_1.png" alt="карточка 1" />
+              <div class="card_background">
+                <button class="card_background__button">
+                  <img src="./img/card_basket.svg" alt="заказать" />Add to Cart
+                </button>
+              </div>
+            </div>
+            <div class="card_description">
+              <h2 class="card_description_title">
+                ELLERY X&nbsp;M&rsquo;O CAPSULE
+              </h2>
+              <p class="card_description_info">
+                Known for her sculptural takes on&nbsp;traditional tailoring,
+                Australian arbiter of&nbsp;cool Kym Ellery teams up&nbsp;with
+                Moda Operandi.
+              </p>
+              <p class="card_description_price">$52.00</p>
+            </div>
+          </div>
+          <div class="card_grid">
+            <div class="card_img">
+              <img src="./img/grid_card_2.png" alt="карточка 2" />
+              <div class="card_background">
+                <button class="card_background__button">
+                  <img src="./img/card_basket.svg" alt="заказать" />Add to Cart
+                </button>
+              </div>
+            </div>
+            <div class="card_description">
+              <h2 class="card_description_title">
+                ELLERY X&nbsp;M&rsquo;O CAPSULE
+              </h2>
+              <p class="card_description_info">
+                Known for her sculptural takes on&nbsp;traditional tailoring,
+                Australian arbiter of&nbsp;cool Kym Ellery teams up&nbsp;with
+                Moda Operandi.
+              </p>
+              <p class="card_description_price">$52.00</p>
+            </div>
+          </div>
+          <div class="card_grid">
+            <div class="card_img">
+              <img src="./img/grid_card_3.png" alt="карточка 3" />
+              <div class="card_background">
+                <button class="card_background__button">
+                  <img src="./img/card_basket.svg" alt="заказать" />Add to Cart
+                </button>
+              </div>
+            </div>
+            <div class="card_description">
+              <h2 class="card_description_title">
+                ELLERY X&nbsp;M&rsquo;O CAPSULE
+              </h2>
+              <p class="card_description_info">
+                Known for her sculptural takes on&nbsp;traditional tailoring,
+                Australian arbiter of&nbsp;cool Kym Ellery teams up&nbsp;with
+                Moda Operandi.
+              </p>
+              <p class="card_description_price">$52.00</p>
+            </div>
+          </div>
+          <div class="card_grid">
+            <div class="card_img">
+              <img src="./img/grid_card_4.png" alt="карточка 4" />
+              <div class="card_background">
+                <button class="card_background__button">
+                  <img src="./img/card_basket.svg" alt="заказать" />Add to Cart
+                </button>
+              </div>
+            </div>
+            <div class="card_description">
+              <h2 class="card_description_title">
+                ELLERY X&nbsp;M&rsquo;O CAPSULE
+              </h2>
+              <p class="card_description_info">
+                Known for her sculptural takes on&nbsp;traditional tailoring,
+                Australian arbiter of&nbsp;cool Kym Ellery teams up&nbsp;with
+                Moda Operandi.
+              </p>
+              <p class="card_description_price">$52.00</p>
+            </div>
+          </div>
+          <div class="card_grid">
+            <div class="card_img">
+              <img src="./img/grid_card_5.png" alt="карточка 5" />
+              <div class="card_background">
+                <button class="card_background__button">
+                  <img src="./img/card_basket.svg" alt="заказать" />Add to Cart
+                </button>
+              </div>
+            </div>
+            <div class="card_description">
+              <h2 class="card_description_title">
+                ELLERY X&nbsp;M&rsquo;O CAPSULE
+              </h2>
+              <p class="card_description_info">
+                Known for her sculptural takes on&nbsp;traditional tailoring,
+                Australian arbiter of&nbsp;cool Kym Ellery teams up&nbsp;with
+                Moda Operandi.
+              </p>
+              <p class="card_description_price">$52.00</p>
+            </div>
+          </div>
+          <div class="card_grid">
+            <div class="card_img">
+              <img src="./img/grid_card_6.png" alt="карточка 6" />
+              <div class="card_background">
+                <button class="card_background__button">
+                  <img src="./img/card_basket.svg" alt="заказать" />Add to Cart
+                </button>
+              </div>
+            </div>
+            <div class="card_description">
+              <h2 class="card_description_title">
+                ELLERY X&nbsp;M&rsquo;O CAPSULE
+              </h2>
+              <p class="card_description_info">
+                Known for her sculptural takes on&nbsp;traditional tailoring,
+                Australian arbiter of&nbsp;cool Kym Ellery teams up&nbsp;with
+                Moda Operandi.
+              </p>
+              <p class="card_description_price">$52.00</p>
+            </div>
+          </div>
+        </div>
+        <button class="third_section_button">Browse All Product</button>
+      </section>
+      <section class="fourth_section">
+        <div class="fourth_section__our_advantages">
+          <img
+            class="fourth_section_our_advantages__icon"
+            src="./img/cargo_car_icon.svg"
+            alt="иконка грузовика"
+          />
+          <h2 class="fourth_section_our_advantages__title">Free Delivery</h2>
+          <p class="fourth_section_our_advantages__text">
+            Worldwide delivery on&nbsp;all. Authorit tively morph
+            <span>next-generation</span> innov tion with extensive models.
+          </p>
+        </div>
+        <div class="fourth_section__our_advantages">
+          <img
+            class="fourth_section_our_advantages__icon"
+            src="./img/procents_icon.svg"
+            alt="иконка процентов"
+          />
+          <h2 class="fourth_section_our_advantages__title">
+            Sales &amp;&nbsp;discounts
+          </h2>
+          <p class="fourth_section_our_advantages__text">
+            Worldwide delivery on&nbsp;all. Authorit tively morph
+            <span>next-generation</span> innov tion with extensive models.
+          </p>
+        </div>
+        <div class="fourth_section__our_advantages">
+          <img
+            class="fourth_section_our_advantages__icon"
+            src="./img/crown_icon.svg"
+            alt="иконка короны"
+          />
+          <h2 class="fourth_section_our_advantages__title">
+            Quality assurance
+          </h2>
+          <p class="fourth_section_our_advantages__text">
+            Worldwide delivery on&nbsp;all. Authorit tively morph
+            <span>next-generation</span> innov tion with extensive models.
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer class="complex__footer">
+      <section class="subscribe">
+        <div class="subscribe__shading">
+          <div class="subscribe__photo">
+            <img
+              src="./img/happy_woman_intersect.png"
+              alt="иконка мсастливой женщины"
+              class="subscribe_photo__img"
+            />
+            <p class="subscribe_photo__text">
+              “Vestibulum quis porttitor dui! Quisque<br />viverra nunc&nbsp;mi,
+              <i>a&nbsp;pulvinar purus<br />condimentum</i>“
+            </p>
+          </div>
+          <div class="subscribe__form">
+            <h2 class="subscribe_form__title">
+              SUBSCRIBE<br /><span>FOR OUR NEWLETTER AND PROMOTION</span>
+            </h2>
+            <form class="subscribe_form__items" action="#" method="post">
+              <input
+                type="email"
+                name="user_email"
+                placeholder="Enter Your Email"
+                id="inp_user_email"
+              />
+              <button class="subscribe_form__button">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <div class="footer">
+        <h2 class="footer__copyright">
+          &copy;&nbsp;2022 Brand All Rights Reserved.
+        </h2>
+        <nav class="footer__nav">
+          <button class="footer_nav__button">
+            <svg
+              width="9.932739"
+              height="16.000000"
+              viewBox="0 0 9.93274 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+              <desc>Created with Pixso.</desc>
+              <defs>
+                <clippath id="clip190_1606">
+                  <rect
+                    width="9.932734"
+                    height="16.000000"
+                    fill="white"
+                    fill-opacity="0"
+                  />
+                </clippath>
+              </defs>
+              <rect
+                width="9.932734"
+                height="16.000000"
+                fill="#FFFFFF"
+                fill-opacity="0"
+              />
+              <g clip-path="url(#clip190_1606)">
+                <path
+                  d="M8.16 8.28L8.58 5.61L5.96 5.61L5.96 3.88C5.96 3.15 6.32 2.44 7.5 2.44L8.69 2.44L8.69 0.17C8.69 0.17 7.61 0 6.57 0C4.42 0 3.01 1.27 3.01 3.58L3.01 5.61L0.62 5.61L0.62 8.28L3.01 8.28L3.01 14.72L5.96 14.72L5.96 8.28L8.16 8.28Z"
+                  fill="#000000"
+                  fill-opacity="1.000000"
+                  fill-rule="nonzero"
+                />
+              </g>
+            </svg>
+          </button>
+          <button class="footer_nav__button">
+            <svg
+              width="14.899048"
+              height="17.000000"
+              viewBox="0 0 14.899 17"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+              <desc>Created with Pixso.</desc>
+              <defs>
+                <clippath id="clip190_1610">
+                  <rect
+                    id="instagram-brands 1"
+                    width="14.899101"
+                    height="17.000000"
+                    fill="white"
+                    fill-opacity="0"
+                  />
+                </clippath>
+              </defs>
+              <rect
+                id="instagram-brands 1"
+                width="14.899101"
+                height="17.000000"
+                fill="#FFFFFF"
+                fill-opacity="0"
+              />
+              <g clip-path="url(#clip190_1610)">
+                <path
+                  id="Vector"
+                  d="M7.45 4.68C5.33 4.68 3.63 6.38 3.63 8.49C3.63 10.6 5.33 12.31 7.45 12.31C9.56 12.31 11.27 10.6 11.27 8.49C11.27 6.38 9.56 4.68 7.45 4.68ZM7.45 10.97C6.08 10.97 4.96 9.86 4.96 8.49C4.96 7.12 6.08 6.01 7.45 6.01C8.82 6.01 9.93 7.12 9.93 8.49C9.93 9.86 8.81 10.97 7.45 10.97ZM12.32 4.52C12.32 5.02 11.92 5.41 11.43 5.41C10.93 5.41 10.53 5.01 10.53 4.52C10.53 4.03 10.93 3.63 11.43 3.63C11.92 3.63 12.32 4.03 12.32 4.52ZM14.85 5.42C14.79 4.23 14.52 3.18 13.64 2.31C12.77 1.44 11.71 1.16 10.52 1.1C9.29 1.03 5.6 1.03 4.37 1.1C3.18 1.16 2.12 1.43 1.25 2.3C0.37 3.17 0.1 4.23 0.04 5.42C-0.03 6.65 -0.03 10.33 0.04 11.56C0.1 12.75 0.37 13.81 1.25 14.68C2.12 15.55 3.18 15.82 4.37 15.88C5.6 15.95 9.29 15.95 10.52 15.88C11.71 15.82 12.77 15.55 13.64 14.68C14.51 13.81 14.79 12.75 14.85 11.56C14.92 10.33 14.92 6.65 14.85 5.42ZM13.26 12.88C13 13.53 12.5 14.03 11.84 14.29C10.86 14.68 8.53 14.59 7.45 14.59C6.36 14.59 4.03 14.68 3.05 14.29C2.4 14.03 1.9 13.53 1.64 12.88C1.25 11.9 1.34 9.57 1.34 8.49C1.34 7.41 1.25 5.08 1.64 4.11C1.9 3.45 2.4 2.95 3.05 2.69C4.04 2.3 6.36 2.39 7.45 2.39C8.53 2.39 10.86 2.31 11.84 2.69C12.49 2.95 13 3.45 13.26 4.11C13.65 5.09 13.56 7.41 13.56 8.49C13.56 9.57 13.65 11.9 13.26 12.88Z"
+                  fill="#000000"
+                  fill-opacity="1.000000"
+                  fill-rule="nonzero"
+                />
+              </g>
+            </svg>
+          </button>
+          <button class="footer_nav__button">
+            <svg
+              width="11.919312"
+              height="16.000000"
+              viewBox="0 0 11.9193 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+              <desc>Created with Pixso.</desc>
+              <defs>
+                <clippath id="clip190_1618">
+                  <rect
+                    width="11.919281"
+                    height="16.000000"
+                    fill="white"
+                    fill-opacity="0"
+                  />
+                </clippath>
+              </defs>
+              <rect
+                width="11.919281"
+                height="16.000000"
+                fill="#FFFFFF"
+                fill-opacity="0"
+              />
+              <g clip-path="url(#clip190_1618)">
+                <path
+                  d="M6.33 0.2C3.14 0.2 0 2.34 0 5.79C0 8 1.22 9.25 1.97 9.25C2.28 9.25 2.45 8.38 2.45 8.14C2.45 7.85 1.72 7.23 1.72 6.02C1.72 3.51 3.62 1.73 6.08 1.73C8.19 1.73 9.75 2.94 9.75 5.16C9.75 6.82 9.09 9.93 6.95 9.93C6.18 9.93 5.52 9.37 5.52 8.56C5.52 7.38 6.34 6.24 6.34 5.02C6.34 2.95 3.42 3.32 3.42 5.82C3.42 6.35 3.49 6.93 3.72 7.41C3.29 9.26 2.42 12.03 2.42 13.94C2.42 14.53 2.5 15.11 2.56 15.7C2.66 15.82 2.61 15.81 2.77 15.75C4.33 13.6 4.28 13.17 4.99 10.35C5.37 11.08 6.36 11.48 7.14 11.48C10.43 11.48 11.91 8.24 11.91 5.33C11.91 2.22 9.25 0.2 6.33 0.2Z"
+                  fill="#000000"
+                  fill-opacity="1.000000"
+                  fill-rule="nonzero"
+                />
+              </g>
+            </svg>
+          </button>
+          <button class="footer_nav__button">
+            <svg
+              width="15.892334"
+              height="16.000000"
+              viewBox="0 0 15.8923 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+              <desc>Created with Pixso.</desc>
+              <defs>
+                <clippath id="clip190_1614">
+                  <rect
+                    id="twitter-brands 1"
+                    width="15.892374"
+                    height="16.000000"
+                    fill="white"
+                    fill-opacity="0"
+                  />
+                </clippath>
+              </defs>
+              <rect
+                id="twitter-brands 1"
+                width="15.892374"
+                height="16.000000"
+                fill="#FFFFFF"
+                fill-opacity="0"
+              />
+              <g clip-path="url(#clip190_1614)">
+                <path
+                  id="Vector"
+                  d="M14.25 4.74C14.26 4.88 14.26 5.02 14.26 5.16C14.26 9.5 10.99 14.49 5 14.49C3.15 14.49 1.44 13.95 0 13.02C0.26 13.05 0.51 13.06 0.78 13.06C2.3 13.06 3.71 12.54 4.83 11.66C3.39 11.63 2.19 10.69 1.78 9.39C1.98 9.42 2.18 9.44 2.4 9.44C2.69 9.44 2.98 9.4 3.25 9.32C1.76 9.02 0.64 7.7 0.64 6.11L0.64 6.07C1.07 6.31 1.58 6.46 2.11 6.48C1.24 5.89 0.66 4.89 0.66 3.75C0.66 3.14 0.82 2.58 1.1 2.1C2.71 4.09 5.12 5.39 7.82 5.53C7.77 5.28 7.74 5.03 7.74 4.78C7.74 2.97 9.19 1.5 11 1.5C11.93 1.5 12.78 1.89 13.38 2.53C14.11 2.39 14.82 2.12 15.44 1.74C15.2 2.5 14.69 3.14 14.01 3.55C14.67 3.48 15.3 3.29 15.89 3.04C15.44 3.69 14.89 4.27 14.25 4.74Z"
+                  fill="#000000"
+                  fill-opacity="1.000000"
+                  fill-rule="nonzero"
+                />
+              </g>
+            </svg>
+          </button>
+        </nav>
+      </div>
+    </footer>
+
+    <script src="./js/popup_menu.js"></script>
+  </body>
+</html>
